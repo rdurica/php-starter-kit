@@ -49,25 +49,27 @@ Then open [https://localhost](https://localhost) (auto-generated certificate) an
 Infrastructure (base Dockerfiles, Caddyfile, PHP INI, OPcache/JIT, entrypoint, and shared CI/build workflows) is maintained centrally in **[rdurica/php-platform](https://github.com/rdurica/php-platform)** instead of being duplicated across every project:
 
 ```text
-  rdurica/php-platform (versioned releases: v1.0.1)
-    ├── ghcr.io/rdurica/php-platform/{prod,ci,dev}:1.0.1   (base images)
-    ├── .github/workflows/reusable-*.yaml                  (shared CI & build)
-    └── renovate-preset.json                               (auto-update rules)
+  rdurica/php-platform (versioned releases: v1.1.0)
+    ├── ghcr.io/rdurica/php-platform/{prod,ci,dev}:1.1.0-php8.5   (base images)
+    ├── .github/workflows/reusable-*.yaml                         (shared CI & build)
+    └── renovate-preset.json                                      (auto-update rules)
           │
           ▼  (consumed & kept in sync by Renovate PRs)
   your application repo (from php-starter-kit)
-    ├── build/prod/Dockerfile                              (thin ~12-line image)
-    ├── compose.yaml / compose.ci.yaml                     (pulls GHCR images)
-    ├── .github/workflows/ci.yaml                          (customizable tests)
-    └── renovate.json                                      (inherits preset)
+    ├── build/prod/Dockerfile                                     (thin ~12-line image)
+    ├── compose.yaml / compose.ci.yaml                            (pulls GHCR images)
+    ├── .github/workflows/ci.yaml                                 (customizable tests)
+    └── renovate.json                                             (inherits preset)
 ```
 
 | Responsibility | Where it lives | How updates propagate |
 | --- | --- | --- |
-| PHP / FrankenPHP runtime, extensions, Caddy, OPcache, entrypoint | [php-platform](https://github.com/rdurica/php-platform) | Renovate PR bumps `:1.x.y` tags in `Dockerfile` & `compose*.yaml` |
+| PHP / FrankenPHP runtime, extensions, Caddy, OPcache, entrypoint | [php-platform](https://github.com/rdurica/php-platform) | Renovate PR bumps `:1.x.y-php8.5` tags in `Dockerfile` & `compose*.yaml` |
 | Code quality & production Docker build workflows | [php-platform](https://github.com/rdurica/php-platform) | Renovate PR bumps `@v1.x.y` in caller workflows |
 | Framework tests & app-specific CI steps | `.github/workflows/ci.yaml` (here) | Fully editable per application |
 | Application code & dependencies (`src/`) | This repository | Owned by the application |
+
+> **Explicit PHP minor version pinning:** The `-php8.5` suffix keeps platform updates (`1.1.0` → `1.1.1`) automatic while preventing unintentional PHP upgrades. To upgrade an application to a newer PHP branch (e.g. `8.5` → `8.6`), explicitly change `-php8.5` to `-php8.6` in `build/prod/Dockerfile`, `compose.yaml`, and `compose.ci.yaml`.
 
 ## Overview
 

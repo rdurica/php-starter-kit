@@ -12,4 +12,4 @@ concurrency:
 
 jobs:
   quality:
-    uses: rdurica/php-platform/.github/workflows/reusable-code-quality.yaml@v1.0.1
+    uses: rdurica/php-platform/.github/workflows/reusable-code-quality.yaml@v1.1.0

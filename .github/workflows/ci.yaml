@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   checks:
-    uses: rdurica/php-platform/.github/workflows/reusable-ci-checks.yaml@v1.0.1
+    uses: rdurica/php-platform/.github/workflows/reusable-ci-checks.yaml@v1.1.0
 
   tests:
     name: Framework Tests

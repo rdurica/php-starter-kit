@@ -17,4 +17,4 @@ jobs:
       contents: read
       packages: write
       security-events: write
-    uses: rdurica/php-platform/.github/workflows/reusable-build.yaml@v1.0.1
+    uses: rdurica/php-platform/.github/workflows/reusable-build.yaml@v1.1.0

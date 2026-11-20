@@ -1,7 +1,7 @@
 services:
   frankenphp:
     container_name: ${COMPOSE_PROJECT_NAME:-frankenphp}
-    image: ghcr.io/rdurica/php-platform/dev:1.0.1
+    image: ghcr.io/rdurica/php-platform/dev:1.1.0-php8.5
     volumes:
       - .:/app
       - node_modules:/app/src/node_modules

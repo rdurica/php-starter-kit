@@ -1,6 +1,6 @@
 services:
   app:
-    image: ghcr.io/rdurica/php-platform/ci:1.0.1
+    image: ghcr.io/rdurica/php-platform/ci:1.1.0-php8.5
     working_dir: /app/src
     volumes:
       - ./src:/app/src
