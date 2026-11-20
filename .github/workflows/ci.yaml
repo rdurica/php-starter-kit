@@ -1,0 +1,55 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: ~
+  workflow_dispatch: ~
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    uses: rdurica/php-platform/.github/workflows/reusable-ci-checks.yaml@v1.0.1
+
+  tests:
+    name: Framework Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pull CI image
+        run: docker compose -f compose.ci.yaml pull
+
+      - name: Run framework tests in Docker
+        run: |
+          docker compose -f compose.ci.yaml run --rm --user root app sh -lc '
+            set -e
+
+            if [ ! -f composer.json ]; then
+              echo "No composer.json found; skipping PHP framework tests."
+              exit 0
+            fi
+
+            composer install --no-interaction --prefer-dist
+
+            if [ -f artisan ]; then
+              [ -f .env ] || cp .env.example .env
+              php artisan key:generate
+              php artisan test
+            elif [ -f bin/console ]; then
+              php bin/console doctrine:database:create --if-not-exists --env=test
+              php bin/console doctrine:schema:update --force --env=test
+              vendor/bin/phpunit
+            elif [ -x vendor/bin/tester ]; then
+              vendor/bin/tester tests -s
+            elif [ -x vendor/bin/phpunit ]; then
+              vendor/bin/phpunit
+            else
+              echo "No supported PHP test runner found; skipping."
+            fi
+          '

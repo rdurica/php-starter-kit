@@ -1,0 +1,31 @@
+services:
+  frankenphp:
+    container_name: ${COMPOSE_PROJECT_NAME:-frankenphp}
+    image: ghcr.io/rdurica/php-platform/dev:1.0.1
+    volumes:
+      - .:/app
+      - node_modules:/app/src/node_modules
+      - caddy_data:/data
+      - caddy_config:/config
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    networks:
+      - apps
+    environment:
+      - PHP_IDE_CONFIG=serverName=localhost
+      - TZ=Europe/Prague
+      - APP_NAME=${APP_NAME:-PHP Starter Kit}
+
+volumes:
+  node_modules:
+  caddy_data:
+  caddy_config:
+
+networks:
+  apps:
+    external: true
+    driver: bridge
