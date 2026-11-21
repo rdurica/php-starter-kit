@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" width="1200" height="690" role="img">
+  <title>PHP Starter Kit — Setup Wizard Preview</title>
+  <defs>
+    <radialGradient id="auroraPurple" cx="12%" cy="15%" r="45%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraSky" cx="88%" cy="88%" r="45%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraPink" cx="50%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wizardTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="btnSymfony" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="btnLaravel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="btnNette" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="wpLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#171E3E"/>
+    </linearGradient>
+    <radialGradient id="wpLogoGlow" cx="25%" cy="20%" r="75%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#6366F1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0B1120" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wpLogoRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="wpLogoCode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="wpLogoSlash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="wpLogoLayerMid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="wpLogoLayerBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.7"/>
+    </linearGradient>
+    <clipPath id="browserClip">
+      <rect x="1" y="1" width="1198" height="688" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Browser Frame -->
+  <g clip-path="url(#browserClip)">
+    <rect x="1" y="1" width="1198" height="688" rx="16" fill="#030712"/>
+    <rect x="1" y="46" width="1198" height="643" fill="url(#auroraPurple)"/>
+    <rect x="1" y="46" width="1198" height="643" fill="url(#auroraSky)"/>
+    <rect x="1" y="46" width="1198" height="643" fill="url(#auroraPink)"/>
+
+    <!-- Browser Chrome Bar -->
+    <rect x="1" y="1" width="1198" height="45" fill="#0B1120"/>
+    <line x1="1" y1="46" x2="1199" y2="46" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="26" cy="24" r="5.5" fill="#EF4444"/>
+    <circle cx="44" cy="24" r="5.5" fill="#F59E0B"/>
+    <circle cx="62" cy="24" r="5.5" fill="#22C55E"/>
+
+    <!-- URL Pill -->
+    <rect x="390" y="10" width="420" height="27" rx="13.5" fill="#020617" stroke="#1E293B" stroke-width="1"/>
+    <path d="M527 22 V19.5 A3 3 0 0 1 533 19.5 V22 M525.5 22 H534.5 V27.5 H525.5 Z" fill="none" stroke="#22C55E" stroke-width="1.3" stroke-linejoin="round"/>
+    <text x="610" y="28" text-anchor="middle" fill="#E2E8F0" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="500">https://localhost</text>
+
+    <!-- Auto HTTPS Pill -->
+    <rect x="1054" y="11" width="122" height="25" rx="12.5" fill="#052E16" stroke="#16A34A" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="1070" cy="23.5" r="3.5" fill="#22C55E"/>
+    <text x="1121" y="27.5" text-anchor="middle" fill="#86EFAC" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600">Auto HTTPS</text>
+  </g>
+  <rect x="1" y="1" width="1198" height="688" rx="16" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Hero Section -->
+  <svg x="580" y="60" width="40" height="40" viewBox="0 0 128 128">
+    <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#wpLogoBg)"/>
+    <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#wpLogoGlow)"/>
+    <rect x="4" y="4" width="120" height="120" rx="28" fill="none" stroke="url(#wpLogoRim)" stroke-width="2"/>
+    <path d="M46 31 L27 44 L46 57" fill="none" stroke="url(#wpLogoCode)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M82 31 L101 44 L82 57" fill="none" stroke="url(#wpLogoCode)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M71 27 L57 61" fill="none" stroke="url(#wpLogoSlash)" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M32 72 L64 87 L96 72" fill="none" stroke="url(#wpLogoLayerMid)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 88 L64 103 L96 88" fill="none" stroke="url(#wpLogoLayerBottom)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <rect x="515" y="112" width="170" height="25" rx="12.5" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+  <text x="600" y="128.5" text-anchor="middle" fill="#38BDF8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.2">PHP STARTER KIT</text>
+  <text x="600" y="174" text-anchor="middle" fill="url(#wizardTitleGrad)" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-1">Choose Your Framework</text>
+  <text x="600" y="201" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14">Select a framework to install and set up your project automatically.</text>
+
+  <!-- Card 1: Symfony -->
+  <g>
+    <rect x="137" y="228" width="290" height="270" rx="18" fill="#0F172A" fill-opacity="0.78" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="254" y="251" width="56" height="56" rx="14" fill="#1E293B" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <svg x="266" y="263" width="32" height="32" viewBox="0 0 256 257">
+      <circle cx="128" cy="128.827" r="128" fill="#FFFFFF"/>
+      <path fill="#030712" d="M183.706 48.124c-12.986.453-24.32 7.61-32.757 17.51c-9.342 10.855-15.557 23.73-20.035 36.872c-8.01-6.565-14.19-15.064-27.041-18.77c-9.933-2.852-20.366-1.674-29.96 5.474c-4.545 3.395-7.676 8.527-9.165 13.351c-3.855 12.537 4.053 23.694 7.645 27.7l7.853 8.416c1.619 1.65 5.518 5.955 3.612 12.127c-2.06 6.71-10.15 11.055-18.448 8.495c-3.706-1.13-9.03-3.891-7.838-7.779c.493-1.59 1.631-2.78 2.241-4.155c.56-1.181.827-2.067.997-2.587c1.516-4.95-.555-11.39-5.857-13.025c-4.946-1.516-10.007-.315-11.969 6.054c-2.225 7.235 1.237 20.366 19.783 26.084c21.729 6.676 40.1-5.155 42.717-20.586c1.642-9.665-2.722-16.845-10.717-26.08l-6.514-7.204c-3.946-3.942-5.301-10.661-1.217-15.825c3.446-4.356 8.354-6.215 16.392-4.029c11.733 3.186 16.963 11.327 25.69 17.893c-3.603 11.819-5.958 23.682-8.09 34.32l-1.299 7.931c-6.238 32.721-11 50.688-23.375 61.003c-2.493 1.773-6.057 4.427-11.429 4.612c-2.816.087-3.726-1.85-3.765-2.694c-.067-1.977 1.599-2.883 2.706-3.773c1.654-.902 4.155-2.398 3.985-7.191c-.18-5.664-4.872-10.575-11.654-10.35c-5.08.173-12.823 4.954-12.532 13.705c.303 9.039 8.728 15.813 21.43 15.384c6.79-.233 21.952-2.997 36.895-20.76c17.392-20.362 22.256-43.705 25.915-60.79l4.084-22.556c2.269.272 4.695.453 7.334.516c21.661.457 32.496-10.763 32.657-18.924c.107-4.939-3.241-9.799-7.928-9.689c-3.355.095-7.57 2.328-8.582 6.968c-.988 4.552 6.893 8.66.733 12.65c-4.376 2.832-12.221 4.828-23.269 3.206l2.009-11.103c4.1-21.055 9.157-46.954 28.341-47.584c1.398-.071 6.514.063 6.633 3.446c.035 1.13-.245 1.418-1.568 4.005c-1.347 2.017-1.855 3.734-1.792 5.707c.185 5.376 4.273 8.909 10.185 8.696c7.916-.256 10.193-7.963 10.063-11.921c-.32-9.3-10.122-15.175-23.1-14.75"/>
+    </svg>
+    <text x="282" y="335" text-anchor="middle" fill="#F8FAFC" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Symfony</text>
+    <text x="282" y="356" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.2">ENTERPRISE</text>
+    <text x="282" y="383" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5">Robust architecture with reusable</text>
+    <text x="282" y="402" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5">components &amp; documentation.</text>
+    <rect x="187" y="432" width="190" height="40" rx="10" fill="url(#btnSymfony)"/>
+    <text x="282" y="457" text-anchor="middle" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700">Install Symfony</text>
+  </g>
+
+  <!-- Card 2: Laravel -->
+  <g>
+    <rect x="455" y="228" width="290" height="270" rx="18" fill="#0F172A" fill-opacity="0.78" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="572" y="251" width="56" height="56" rx="14" fill="#1E293B" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <svg x="585" y="264" width="30" height="30" viewBox="0 0 24 24">
+      <path fill="#FF2D20" d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.011.02.018.04.024.06.006.01.012.021.015.032zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 01-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81L1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505l2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95l-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978L16.21 7.087 14.63 6.18v4.283l2.182 1.256 1.58.908zm-8.65 9.654l5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"/>
+    </svg>
+    <text x="600" y="335" text-anchor="middle" fill="#F8FAFC" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Laravel</text>
+    <text x="600" y="356" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.2">ELEGANT</text>
+    <text x="600" y="383" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5">Expressive syntax, rich ecosystem,</text>
+    <text x="600" y="402" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5">and rapid development experience.</text>
+    <rect x="505" y="432" width="190" height="40" rx="10" fill="url(#btnLaravel)"/>
+    <text x="600" y="457" text-anchor="middle" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700">Install Laravel</text>
+  </g>
+
+  <!-- Card 3: Nette -->
+  <g>
+    <rect x="773" y="228" width="290" height="270" rx="18" fill="#0F172A" fill-opacity="0.78" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="890" y="251" width="56" height="56" rx="14" fill="#1E293B" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <svg x="899" y="260" width="38" height="38" viewBox="0 0 24 24">
+      <path fill="#3484D2" d="M6.244 14.334c-.341.243-.558.39-.65.443-.488.29-.934.437-1.338.437-.226 0-.446-.053-.663-.155a1.17 1.17 0 0 1-.486-.403.988.988 0 0 1-.162-.556c0-.292.099-.663.296-1.113.282-.658.433-1.01.452-1.057a.497.497 0 0 1-.015-.127 2.511 2.511 0 0 0-.268.127 7.1 7.1 0 0 0-.774.578 13.77 13.77 0 0 0-.691.676 6.005 6.005 0 0 0-.085 1.001c0 .253.015.507.043.761l-1.705.268A6.198 6.198 0 0 1 0 13.706c0-.292.028-.588.085-.889.056-.3.16-.638.309-1.014.104-.263.249-.592.437-.987l1.959-.324c-.122.301-.211.526-.267.677a9.26 9.26 0 0 0-.254.691c.47-.433.94-.767 1.409-1.001.376-.188.714-.282 1.015-.282.17 0 .343.032.522.098.178.066.307.17.387.311.08.141.12.309.12.507 0 .282-.08.629-.24 1.043-.188.47-.371.939-.549 1.409 0 .066.024.106.07.12a.49.49 0 0 0 .141.02c.189 0 .469-.098.841-.294a1.74 1.74 0 0 1-.052-.424c0-.226.032-.441.098-.648.066-.207.166-.423.297-.648.234-.386.564-.714.986-.987a3.45 3.45 0 0 1 1.339-.521c.17-.019.3-.029.395-.029.31 0 .587.052.831.156.244.103.446.272.606.507.094.15.141.301.141.45 0 .236-.117.466-.352.691-.169.16-.397.311-.684.451a6.777 6.777 0 0 1-.853.352c-.206.066-.498.147-.873.24.122.254.296.459.522.614.225.154.464.232.718.232.386 0 .771-.099 1.156-.296.018-.01.312-.195.883-.557a4.035 4.035 0 0 1 .096-.641l.047-.214 2.035-.121-.151.525a1.982 1.982 0 0 0-.092.529c0 .226.045.383.135.471.089.09.217.135.387.135.244 0 .563-.103.958-.31l.454-.274c.003-.075.009-.156.018-.241.014-.135.043-.303.084-.5l.048-.213 2.034-.122c-.048.17-.098.345-.151.525-.06.211-.092.388-.092.529 0 .226.045.383.135.471.089.09.218.135.387.135.245 0 .565-.103.959-.31l.294-.178a1.505 1.505 0 0 1-.013-.203c0-.226.034-.441.099-.648.066-.207.165-.423.296-.648.234-.386.564-.714.986-.987.424-.272.87-.447 1.339-.521.17-.019.302-.029.396-.029.309 0 .586.052.831.156.243.103.446.272.605.507.094.15.141.301.141.45 0 .236-.117.466-.352.691-.168.16-.396.311-.683.451a6.902 6.902 0 0 1-.853.352c-.207.066-.498.147-.874.24.122.254.296.459.522.614.226.154.465.232.718.232.386 0 .771-.099 1.156-.296.019-.01.338-.211.958-.606v.634c-.056.038-.281.198-.675.479a4.575 4.575 0 0 1-.72.437c-.47.207-.987.31-1.55.31-.375 0-.709-.045-1.001-.133a2.078 2.078 0 0 1-.803-.473 1.58 1.58 0 0 1-.357-.456c-.414.3-.732.513-.954.64-.497.281-.949.422-1.352.422-.227 0-.41-.014-.62-.113-.358-.15-.607-.345-.748-.584a1.504 1.504 0 0 1-.158-.397c-.435.316-.768.54-.997.672-.498.281-.949.422-1.353.422-.227 0-.41-.014-.62-.113-.358-.15-.606-.345-.748-.584a1.505 1.505 0 0 1-.177-.493c-.099.067-.307.216-.625.443a4.667 4.667 0 0 1-.719.437c-.47.207-.987.31-1.55.31-.377 0-.71-.045-1.001-.133a2.089 2.089 0 0 1-.804-.473 1.66 1.66 0 0 1-.224-.245zm2.832-2.574a.786.786 0 0 0 .013-.169c0-.244-.102-.366-.309-.366a.757.757 0 0 0-.155.028c-.282.066-.503.245-.663.536a1.885 1.885 0 0 0-.239.915c.395-.102.681-.206.859-.309.292-.16.456-.371.494-.635zm12.782 0a.715.715 0 0 0 .014-.169c0-.244-.103-.366-.31-.366a.768.768 0 0 0-.155.028c-.281.066-.503.245-.662.536-.16.291-.24.597-.24.915.395-.102.682-.206.86-.309.291-.16.455-.371.493-.635zm-10.838.043l.283-1.113.578-.028.549-1.509 2.085-.366-.591 1.776.944-.043-.253 1.057c-1.198.082-2.395.155-3.595.226zm3.877 0l.281-1.113.578-.028.549-1.509 2.086-.366-.592 1.776.944-.043-.253 1.057c-1.201.082-2.408.156-3.593.226z"/>
+    </svg>
+    <text x="918" y="335" text-anchor="middle" fill="#F8FAFC" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Nette</text>
+    <text x="918" y="356" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.2">SMART &amp; SECURE</text>
+    <text x="918" y="383" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5">Czech-made framework focused on</text>
+    <text x="918" y="402" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5">security &amp; developer happiness.</text>
+    <rect x="823" y="432" width="190" height="40" rx="10" fill="url(#btnNette)"/>
+    <text x="918" y="457" text-anchor="middle" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700">Install Nette</text>
+  </g>
+
+  <!-- Server Statistics -->
+  <text x="600" y="532" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.4">SERVER STATISTICS</text>
+
+  <g>
+    <rect x="144" y="546" width="216" height="62" rx="12" fill="#0F172A" fill-opacity="0.72" stroke="#1E293B" stroke-width="1"/>
+    <text x="252" y="568" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="0.8">PHP VERSION</text>
+    <text x="252" y="592" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">8.x</text>
+  </g>
+  <g>
+    <rect x="376" y="546" width="216" height="62" rx="12" fill="#0F172A" fill-opacity="0.72" stroke="#1E293B" stroke-width="1"/>
+    <text x="484" y="568" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="0.8">SERVER</text>
+    <text x="484" y="592" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">FrankenPHP</text>
+  </g>
+  <g>
+    <rect x="608" y="546" width="216" height="62" rx="12" fill="#0F172A" fill-opacity="0.72" stroke="#1E293B" stroke-width="1"/>
+    <text x="716" y="568" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="0.8">ENVIRONMENT</text>
+    <text x="716" y="592" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">Docker</text>
+  </g>
+  <g>
+    <rect x="840" y="546" width="216" height="62" rx="12" fill="#0F172A" fill-opacity="0.72" stroke="#1E293B" stroke-width="1"/>
+    <text x="948" y="568" text-anchor="middle" fill="#94A3B8" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="0.8">SERVER TIME</text>
+    <text x="948" y="592" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700">14:03</text>
+  </g>
+
+  <!-- Bottom Lifecycle Strip (perfectly centered: total width 798px, 201px margins) -->
+  <g>
+    <rect x="201" y="632" width="204" height="30" rx="15" fill="#0B1120" stroke="#1E293B" stroke-width="1"/>
+    <text x="303" y="651" text-anchor="middle" fill="#CBD5E1" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600">1. Select Framework</text>
+
+    <path d="M417 647 H439 M435 643 L440 647 L435 651" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="451" y="632" width="278" height="30" rx="15" fill="#0B1120" stroke="#1E293B" stroke-width="1"/>
+    <text x="590" y="651" text-anchor="middle" fill="#CBD5E1" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600">2. Stream Live Composer Output</text>
+
+    <path d="M741 647 H763 M759 643 L764 647 L759 651" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="775" y="632" width="224" height="30" rx="15" fill="#0B1120" stroke="#1E293B" stroke-width="1"/>
+    <text x="887" y="651" text-anchor="middle" fill="#22C55E" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600">3. Self-Cleanup &amp; Serve /</text>
+  </g>
+</svg>

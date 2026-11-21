@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+  <title>PHP Stack Logo</title>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#171E3E"/>
+    </linearGradient>
+    <radialGradient id="topGlow" cx="25%" cy="20%" r="75%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#6366F1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0B1120" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="slashGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="layerMid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="layerBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle container -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bgGrad)"/>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#topGlow)"/>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="none" stroke="url(#rimGrad)" stroke-width="2"/>
+
+  <!-- Code prism emblem < / > -->
+  <path d="M46 31 L27 44 L46 57" fill="none" stroke="url(#codeGrad)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M82 31 L101 44 L82 57" fill="none" stroke="url(#codeGrad)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M71 27 L57 61" fill="none" stroke="url(#slashGrad)" stroke-width="7.5" stroke-linecap="round"/>
+
+  <!-- Modular platform base layers -->
+  <path d="M32 72 L64 87 L96 72" fill="none" stroke="url(#layerMid)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 88 L64 103 L96 88" fill="none" stroke="url(#layerBottom)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

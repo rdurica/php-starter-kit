@@ -234,6 +234,7 @@ function showUI() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Starter Kit — Setup Wizard</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect x='4' y='4' width='120' height='120' rx='28' fill='%230B1120' stroke='%2338BDF8' stroke-opacity='0.5' stroke-width='3'/%3E%3Cpath d='M46 31 L27 44 L46 57 M82 31 L101 44 L82 57' fill='none' stroke='%2338BDF8' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M71 27 L57 61' fill='none' stroke='%23E0F2FE' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M32 72 L64 87 L96 72' fill='none' stroke='%23818CF8' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M32 88 L64 103 L96 88' fill='none' stroke='%236366F1' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <style>
         *, *::before, *::after {
             margin: 0;
@@ -339,6 +340,22 @@ function showUI() {
 
         .hero {
             text-align: center;
+        }
+
+        .hero-logo {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-logo svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            filter: drop-shadow(0 8px 20px rgba(56, 189, 248, 0.18));
         }
 
         .hero-badge {
@@ -754,6 +771,54 @@ function showUI() {
 
     <div class="content">
         <div class="hero">
+            <div class="hero-logo" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                    <defs>
+                        <linearGradient id="wizardLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0B1120"/>
+                            <stop offset="60%" stop-color="#0F172A"/>
+                            <stop offset="100%" stop-color="#171E3E"/>
+                        </linearGradient>
+                        <radialGradient id="wizardLogoGlow" cx="25%" cy="20%" r="75%">
+                            <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+                            <stop offset="55%" stop-color="#6366F1" stop-opacity="0.08"/>
+                            <stop offset="100%" stop-color="#0B1120" stop-opacity="0"/>
+                        </radialGradient>
+                        <linearGradient id="wizardLogoRim" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.65"/>
+                            <stop offset="50%" stop-color="#6366F1" stop-opacity="0.35"/>
+                            <stop offset="100%" stop-color="#1E293B" stop-opacity="0.8"/>
+                        </linearGradient>
+                        <linearGradient id="wizardLogoCode" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#E0F2FE"/>
+                            <stop offset="50%" stop-color="#38BDF8"/>
+                            <stop offset="100%" stop-color="#0EA5E9"/>
+                        </linearGradient>
+                        <linearGradient id="wizardLogoSlash" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#F8FAFC"/>
+                            <stop offset="100%" stop-color="#38BDF8"/>
+                        </linearGradient>
+                        <linearGradient id="wizardLogoLayerMid" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#818CF8"/>
+                            <stop offset="50%" stop-color="#38BDF8"/>
+                            <stop offset="100%" stop-color="#818CF8"/>
+                        </linearGradient>
+                        <linearGradient id="wizardLogoLayerBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.7"/>
+                            <stop offset="50%" stop-color="#6366F1"/>
+                            <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.7"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#wizardLogoBg)"/>
+                    <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#wizardLogoGlow)"/>
+                    <rect x="4" y="4" width="120" height="120" rx="28" fill="none" stroke="url(#wizardLogoRim)" stroke-width="2"/>
+                    <path d="M46 31 L27 44 L46 57" fill="none" stroke="url(#wizardLogoCode)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M82 31 L101 44 L82 57" fill="none" stroke="url(#wizardLogoCode)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M71 27 L57 61" fill="none" stroke="url(#wizardLogoSlash)" stroke-width="7.5" stroke-linecap="round"/>
+                    <path d="M32 72 L64 87 L96 72" fill="none" stroke="url(#wizardLogoLayerMid)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M32 88 L64 103 L96 88" fill="none" stroke="url(#wizardLogoLayerBottom)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
             <div class="hero-badge">PHP Starter Kit</div>
             <h1>Choose Your Framework</h1>
             <p>Select a framework to install and set up your project automatically.</p>

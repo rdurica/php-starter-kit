@@ -55,6 +55,7 @@ def main():
         (
             "README.md",
             [
+                ('<h1 align="center">PHP Starter Kit</h1>', f'<h1 align="center">{title}</h1>'),
                 ("# PHP Starter Kit", f"# {title}"),
                 ("https://github.com/rdurica/php-starter-kit.git", f"https://github.com/{repo_full}.git"),
                 ("https://github.com/rdurica/php-starter-kit/actions", f"https://github.com/{repo_full}/actions"),

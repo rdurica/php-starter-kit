@@ -3,7 +3,7 @@
 ## Stack
 
 - **Backend**: PHP 8.5+, FrankenPHP 1.12 (`ghcr.io/rdurica/php-platform`)
-- **Frontend**: Vite, Node.js 20+
+- **Frontend**: Vite, Node.js 22+
 - **Supported Frameworks**: Laravel, Symfony, Nette
 - **Database**: PostgreSQL (recommended), MySQL/MariaDB, SQLite
 - **Cache/Sessions/Queue**: Redis
@@ -26,7 +26,7 @@ All development runs inside Docker containers via `docker compose`. The service 
 
 ```shell
 docker compose exec frankenphp php artisan <cmd>
-docker compose exec frankenphp bin/console <cmd>
+docker compose exec frankenphp php bin/console <cmd>
 docker compose exec frankenphp npm <cmd>
 ```
 
